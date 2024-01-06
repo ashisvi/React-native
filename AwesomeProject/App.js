@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 function App() {
   return (
     <View style={style.container}>
-      <Text style={style.heading}>Hello World!</Text>
+      <Text style={style.heading}>-Hello World!-</Text>
     </View>
   );
 }
