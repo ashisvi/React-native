@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "900",
     margin: 8,
+    color: '#fff'
   },
   card: {
     height: 100,
