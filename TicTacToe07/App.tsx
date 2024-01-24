@@ -10,7 +10,6 @@ import {
   ToastAndroid,
 } from "react-native";
 
-import Toast from "react-native-toast-message";
 import Icons from "./src/components/Icons";
 
 export default function App() {
@@ -22,8 +21,6 @@ export default function App() {
     setIsCross(false);
     setGameWinner("");
     setGameState(new Array(9).fill("empty", 0, 9));
-
-    showToast();
   };
 
   const checkIsWinner = () => {
