@@ -80,7 +80,7 @@ export default function App() {
 
   const onChangeItem = (itemNumber: number) => {
     if (gameWinner) {
-      return ToastAndroid.show("Hello", ToastAndroid.SHORT);
+      return ToastAndroid.show("Restart the game", ToastAndroid.SHORT);
     }
 
     if (gameState[itemNumber] === "empty") {
@@ -140,14 +140,12 @@ export default function App() {
 const styles = StyleSheet.create({
   playerInfo: {
     height: 56,
-
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-
     borderRadius: 4,
     paddingVertical: 8,
-    marginVertical: 12,
+    marginVertical: 20,
     marginHorizontal: 14,
 
     shadowOffset: {
@@ -171,16 +169,17 @@ const styles = StyleSheet.create({
   },
   grid: {
     margin: 12,
+    flex: 0,
+    height: 500
   },
   card: {
     height: 100,
-    width: "33.33%",
-
+    width: "32.75%",
     alignItems: "center",
     justifyContent: "center",
-
-    borderWidth: 1,
-    borderColor: "#333",
+    borderRadius: 8,
+    margin: 1,
+    backgroundColor: "#333",
   },
   winnerInfo: {
     borderRadius: 8,
@@ -200,6 +199,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 8,
     marginHorizontal: 36,
+    marginVertical: 20,
     backgroundColor: "#8D3DAF",
   },
   gameBtnText: {
