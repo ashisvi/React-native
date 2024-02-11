@@ -13,7 +13,10 @@ const RenderItem = ({ item, index }: Props) => {
       style={[styles.itemContainer, { backgroundColor: item.backgroundColor }]}
     >
       <View
-        style={[styles.animationContainer, { backgroundColor: item.animation }]}
+        style={[
+          styles.animationContainer,
+          { backgroundColor: item.animationBg },
+        ]}
       >
         <LottieView
           source={item.animation}
